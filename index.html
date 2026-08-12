@@ -30,6 +30,7 @@
       font-family: "Cormorant Garamond", serif;
     }
 
+
     /* =========================
        PORTADA
        ========================= */
@@ -92,6 +93,8 @@
 
       cursor: pointer;
 
+      text-decoration: none;
+
       transition: all 0.3s ease;
     }
 
@@ -108,73 +111,151 @@
     .recuerdos {
       min-height: 100vh;
 
-      padding: 90px 25px;
+      padding: 80px 20px 120px;
 
       text-align: center;
 
       background: #fffaf7;
     }
 
-  .titulo-recuerdos {
-  font-family: "Parisienne", cursive;
+    .titulo-recuerdos {
+      font-family: "Parisienne", cursive;
 
-  font-size: clamp(32px, 7vw, 58px);
+      font-size: clamp(28px, 8vw, 54px);
 
-  font-weight: normal;
+      font-weight: normal;
 
-  line-height: 1.15;
+      line-height: 1.05;
 
-  color: #2b2527;
+      color: #2b2527;
 
-  max-width: 650px;
+      max-width: 850px;
 
-  margin: 0 auto 45px;
-}
+      margin: 0 auto 55px;
+    }
+
+
+    /* =========================
+       PRIMER RECUERDO
+       ========================= */
 
     .inicio-recuerdos {
-      max-width: 700px;
+      max-width: 650px;
 
       margin: 0 auto;
     }
 
-       .foto-recuerdo {
+    .foto-recuerdo {
       display: block;
 
       width: 100%;
-      max-width: 420px;
+
+      max-width: 390px;
 
       height: auto;
 
       margin: 0 auto;
 
-      border-radius: 4px;
+      border-radius: 3px;
 
       box-shadow:
         0 10px 30px rgba(80, 50, 60, 0.12);
     }
 
     .descripcion-recuerdo {
-      max-width: 600px;
+      max-width: 500px;
 
-      margin: 30px auto 0;
+      margin: 25px auto 0;
 
-      font-size: 21px;
+      font-size: 19px;
 
-      line-height: 1.6;
+      line-height: 1.5;
 
       color: #5f454d;
 
       font-style: italic;
     }
 
+
+    /* =========================
+       SEGUNDO RECUERDO
+       ========================= */
+
+    .recuerdo-extra {
+      margin-top: 90px;
+
+      margin-bottom: 90px;
+    }
+
+    .recuerdo-extra .foto-recuerdo {
+      max-width: 300px;
+
+      transform: rotate(2deg);
+    }
+
+    .recuerdo-extra .descripcion-recuerdo {
+      max-width: 350px;
+
+      margin-top: 25px;
+    }
+
+
+    /* =========================
+       CELULAR
+       ========================= */
+
     @media (max-width: 600px) {
 
+      .portada {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 55px;
+
+        line-height: 1.15;
+      }
+
       .recuerdos {
-        padding: 75px 20px;
+        padding: 65px 18px 100px;
       }
 
       .titulo-recuerdos {
-        font-size: 46px;
+        font-size: 36px;
+
+        line-height: 1.05;
+
+        max-width: 350px;
+
+        margin-bottom: 50px;
+      }
+
+      .foto-recuerdo {
+        max-width: 330px;
+      }
+
+      .descripcion-recuerdo {
+        max-width: 320px;
+
+        font-size: 18px;
+
+        line-height: 1.45;
+
+        margin-top: 22px;
+      }
+
+      .recuerdo-extra {
+        margin-top: 75px;
+
+        margin-bottom: 75px;
+      }
+
+      .recuerdo-extra .foto-recuerdo {
+        max-width: 245px;
+      }
+
+      .recuerdo-extra .descripcion-recuerdo {
+        max-width: 290px;
       }
 
     }
@@ -182,7 +263,9 @@
   </style>
 </head>
 
+
 <body>
+
 
   <!-- =========================
        PORTADA
@@ -208,37 +291,46 @@
   <section class="recuerdos" id="recuerdos">
 
     <h2 class="titulo-recuerdos">
-  Porque hay recuerdos que se quedan para siempre… ❤️
-</h2>
+      Porque hay recuerdos que se quedan para siempre… ❤️
+    </h2>
+
+
+    <!-- PRIMERA FOTO -->
 
     <div class="inicio-recuerdos">
 
-  <img
-    src="WhatsApp Image 2026-08-12 at 10.55.07.jpeg"
-    alt="Una de nuestras primeras fotos"
-    class="foto-recuerdo"
-  >
+      <img
+        src="WhatsApp Image 2026-08-12 at 10.55.07.jpeg"
+        alt="Una de nuestras primeras fotos"
+        class="foto-recuerdo"
+      >
 
-  <p class="descripcion-recuerdo">
-    Y pensar que esta foto fue el comienzo de tantas historias juntas.
-  </p>
+      <p class="descripcion-recuerdo">
+        Y pensar que esta foto fue el comienzo de tantas historias juntas.
+      </p>
 
-</div>
+    </div>
+
+
+    <!-- SEGUNDA FOTO -->
+
     <div class="recuerdo-extra">
 
-  <img
-    src="WhatsApp Image 2026-08-12 at 11.18.46.jpeg"
-    alt="Bailando corridos juntas"
-    class="foto-recuerdo"
-  >
+      <img
+        src="WhatsApp Image 2026-08-12 at 11.18.46.jpeg"
+        alt="Bailando corridos juntas"
+        class="foto-recuerdo"
+      >
 
-  <p class="descripcion-recuerdo">
-    Ir a bailar corridos entre la tercera edad.💃
-  </p>
+      <p class="descripcion-recuerdo">
+        Ir a bailar corridos con los de la tercera edad 💃
+      </p>
 
-</div>
+    </div>
+
 
   </section>
+
 
 </body>
 </html>
