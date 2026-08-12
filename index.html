@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Para Melani ♡</title>
+  <title>Para Melani 💕</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +54,7 @@
     h1 {
       font-family: "Parisienne", cursive;
 
-      font-size: clamp(52px, 13vw, 90px);
+      font-size: clamp(48px, 11vw, 82px);
 
       font-weight: normal;
 
@@ -66,7 +66,7 @@
     }
 
     .continuar {
-      margin-top: 45px;
+      margin-top: 50px;
 
       border: 1px solid #a96d7c;
 
@@ -92,6 +92,21 @@
       color: white;
     }
 
+    /* Adaptación para celulares */
+
+    @media (max-width: 600px) {
+
+      h1 {
+        font-size: 52px;
+        max-width: 90%;
+      }
+
+      .continuar {
+        margin-top: 45px;
+      }
+
+    }
+
   </style>
 </head>
 
@@ -100,13 +115,17 @@
   <main class="portada">
 
     <h1>
-      Esto es para vos, Melani ♡
+      Esto es para vos, Melani 💕
     </h1>
 
     <button class="continuar">
       Empezar →
     </button>
 
+  </main>
+
+</body>
+</html>
   </main>
 
 </body>
