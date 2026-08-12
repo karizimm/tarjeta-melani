@@ -19,12 +19,20 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       min-height: 100vh;
       background: #f7f0ea;
       color: #2b2527;
       font-family: "Cormorant Garamond", serif;
     }
+
+    /* =========================
+       PORTADA
+       ========================= */
 
     .portada {
       min-height: 100vh;
@@ -92,17 +100,59 @@
       color: white;
     }
 
-    /* Adaptación para celulares */
+
+    /* =========================
+       PÁGINA 2
+       ========================= */
+
+    .recuerdos {
+      min-height: 100vh;
+
+      padding: 90px 25px;
+
+      text-align: center;
+
+      background: #fffaf7;
+    }
+
+    .titulo-recuerdos {
+      font-family: "Parisienne", cursive;
+
+      font-size: clamp(42px, 9vw, 68px);
+
+      font-weight: normal;
+
+      line-height: 1.2;
+
+      color: #2b2527;
+
+      max-width: 700px;
+
+      margin: 0 auto 70px;
+    }
+
+    .inicio-recuerdos {
+      max-width: 700px;
+
+      margin: 0 auto;
+    }
+
+    .texto-placeholder {
+      font-size: 20px;
+
+      color: #7d4657;
+
+      margin-top: 30px;
+    }
 
     @media (max-width: 600px) {
 
-      h1 {
-        font-size: 52px;
-        max-width: 90%;
+      .recuerdos {
+        padding: 75px 20px;
       }
 
-      .continuar {
-        margin-top: 45px;
+      .titulo-recuerdos {
+        font-size: 46px;
       }
 
     }
@@ -112,21 +162,42 @@
 
 <body>
 
-  <main class="portada">
+  <!-- =========================
+       PORTADA
+       ========================= -->
+
+  <section class="portada">
 
     <h1>
       Esto es para vos, Melani 💕
     </h1>
 
-    <button class="continuar">
+    <a href="#recuerdos" class="continuar">
       Empezar →
-    </button>
+    </a>
 
-  </main>
+  </section>
 
-</body>
-</html>
-  </main>
+
+  <!-- =========================
+       PÁGINA 2
+       ========================= -->
+
+  <section class="recuerdos" id="recuerdos">
+
+    <h2 class="titulo-recuerdos">
+      Porque hay recuerdos que se quedan para siempre…
+    </h2>
+
+    <div class="inicio-recuerdos">
+
+      <p class="texto-placeholder">
+        Acá comienza nuestra pequeña historia.
+      </p>
+
+    </div>
+
+  </section>
 
 </body>
 </html>
