@@ -507,113 +507,12 @@
   color: #2b2527;
   border-bottom-color: #2b2527;
 }
-    /* FLORES DECORATIVAS - SOLO PORTADA */
-
-.flor-sombra {
-  position: absolute;
-  top: -35px;
-  left: -35px;
-  width: 190px;
-  height: 190px;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.22;
-  transform: rotate(-18deg);
-}
-
-.flor-sombra::before,
-.flor-sombra::after {
-  content: "";
-  position: absolute;
-  border-radius: 50% 50% 45% 55%;
-  background: #b86f82;
-  filter: blur(1px);
-}
-
-.flor-sombra::before {
-  width: 90px;
-  height: 125px;
-  top: 25px;
-  left: 45px;
-  transform: rotate(-38deg);
-  box-shadow:
-    -35px 25px 0 -8px #b86f82,
-    35px 25px 0 -8px #b86f82,
-    -20px 65px 0 -12px #b86f82,
-    25px 65px 0 -12px #b86f82;
-}
-
-.flor-sombra::after {
-  width: 45px;
-  height: 55px;
-  top: 65px;
-  left: 70px;
-  background: #a85e73;
-  transform: rotate(12deg);
-  box-shadow:
-    -45px 35px 0 -12px #a85e73,
-    40px 35px 0 -12px #a85e73;
-}
-
-/* tallitos y hojas */
-
-.flor-sombra .tallo {
-  position: absolute;
-  width: 85px;
-  height: 3px;
-  background: #71846a;
-  top: 130px;
-  left: 25px;
-  transform: rotate(38deg);
-  opacity: 0.65;
-  border-radius: 50%;
-}
-
-.flor-sombra .hoja1,
-.flor-sombra .hoja2 {
-  position: absolute;
-  width: 38px;
-  height: 18px;
-  background: #71846a;
-  border-radius: 100% 0 100% 0;
-  opacity: 0.55;
-}
-
-.flor-sombra .hoja1 {
-  top: 130px;
-  left: 70px;
-  transform: rotate(20deg);
-}
-
-.flor-sombra .hoja2 {
-  top: 112px;
-  left: 35px;
-  transform: rotate(-35deg);
-}
-
-/* celular */
-
-@media (max-width: 600px) {
-  .flor-sombra {
-    width: 135px;
-    height: 135px;
-    top: -25px;
-    left: -25px;
-    opacity: 0.19;
-    transform: rotate(-18deg) scale(0.9);
-  }
-}
   </style>
 </head>
 
 
 <body>
-  <div class="flor-sombra">
-  <span class="tallo"></span>
-  <span class="hoja1"></span>
-  <span class="hoja2"></span>
-</div>
-
+  
   <!-- =========================
        PORTADA
        ========================= -->
