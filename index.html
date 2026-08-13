@@ -121,8 +121,14 @@
 
 
     /* =========================
-       DESCRIPCIONES
+       COMPOSICIÓN
+       FOTO + TEXTO
        ========================= */
+
+    .composicion {
+      display: inline-block;
+      text-align: center;
+    }
 
     .descripcion {
       font-family: "Merriweather", serif;
@@ -135,9 +141,12 @@
 
       font-style: normal;
 
-      max-width: 280px;
+      width: 100%;
+      max-width: 300px;
 
-      margin-top: 14px;
+      margin: 14px auto 0;
+
+      text-align: center;
     }
 
 
@@ -159,6 +168,7 @@
 
     /* =========================
        RECUERDO 1
+       CENTRADO
        ========================= */
 
     .recuerdo-1 {
@@ -166,26 +176,20 @@
       text-align: center;
     }
 
-    .recuerdo-1 .polaroid {
+    .recuerdo-1 .composicion {
       transform: rotate(-2deg);
     }
 
     .foto-1 {
       width: 290px;
       max-width: 82vw;
-
       display: block;
-    }
-
-    .recuerdo-1 .descripcion {
-      margin-left: auto;
-      margin-right: auto;
-      transform: rotate(-2deg);
     }
 
 
     /* =========================
        RECUERDO 2
+       IZQUIERDA + INCLINADA
        ========================= */
 
     .recuerdo-2 {
@@ -193,7 +197,7 @@
       text-align: left;
     }
 
-    .recuerdo-2 .polaroid {
+    .recuerdo-2 .composicion {
       margin-left: 4%;
       transform: rotate(-7deg);
     }
@@ -201,19 +205,13 @@
     .foto-2 {
       width: 245px;
       max-width: 72vw;
-
       display: block;
-    }
-
-    .recuerdo-2 .descripcion {
-      margin-left: 7%;
-      text-align: left;
-      transform: rotate(-7deg);
     }
 
 
     /* =========================
        RECUERDO 3
+       DERECHA + INCLINADA
        ========================= */
 
     .recuerdo-3 {
@@ -221,7 +219,7 @@
       text-align: right;
     }
 
-    .recuerdo-3 .polaroid {
+    .recuerdo-3 .composicion {
       margin-right: 4%;
       transform: rotate(6deg);
     }
@@ -229,20 +227,13 @@
     .foto-3 {
       width: 275px;
       max-width: 78vw;
-
       display: block;
-    }
-
-    .recuerdo-3 .descripcion {
-      margin-left: auto;
-      margin-right: 6%;
-      text-align: right;
-      transform: rotate(6deg);
     }
 
 
     /* =========================
        RECUERDO 4
+       DERECHA
        ========================= */
 
     .recuerdo-4 {
@@ -250,7 +241,7 @@
       text-align: right;
     }
 
-    .recuerdo-4 .polaroid {
+    .recuerdo-4 .composicion {
       margin-right: 4%;
       transform: rotate(3deg);
     }
@@ -258,20 +249,13 @@
     .foto-4 {
       width: 250px;
       max-width: 68vw;
-
       display: block;
-    }
-
-    .recuerdo-4 .descripcion {
-      margin-left: auto;
-      margin-right: 5%;
-      text-align: right;
-      transform: rotate(3deg);
     }
 
 
     /* =========================
        RECUERDO 5
+       CENTRADO
        ========================= */
 
     .recuerdo-5 {
@@ -279,28 +263,20 @@
       text-align: center;
     }
 
-    .recuerdo-5 .polaroid {
+    .recuerdo-5 .composicion {
       transform: rotate(0deg);
     }
 
     .foto-5 {
       width: 300px;
       max-width: 85vw;
-
       display: block;
-    }
-
-    .recuerdo-5 .descripcion {
-      max-width: 310px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      transform: rotate(0deg);
     }
 
 
     /* =========================
        RECUERDO 6
+       IZQUIERDA + INCLINADA
        ========================= */
 
     .recuerdo-6 {
@@ -308,7 +284,7 @@
       text-align: left;
     }
 
-    .recuerdo-6 .polaroid {
+    .recuerdo-6 .composicion {
       margin-left: 4%;
       transform: rotate(-7deg);
     }
@@ -316,19 +292,13 @@
     .foto-6 {
       width: 240px;
       max-width: 70vw;
-
       display: block;
-    }
-
-    .recuerdo-6 .descripcion {
-      margin-left: 7%;
-      text-align: left;
-      transform: rotate(-7deg);
     }
 
 
     /* =========================
        RECUERDO 7
+       DERECHA + INCLINADA
        ========================= */
 
     .recuerdo-7 {
@@ -336,7 +306,7 @@
       text-align: right;
     }
 
-    .recuerdo-7 .polaroid {
+    .recuerdo-7 .composicion {
       margin-right: 5%;
       transform: rotate(-3deg);
     }
@@ -344,21 +314,13 @@
     .foto-7 {
       width: 205px;
       max-width: 62vw;
-
       display: block;
-    }
-
-    .recuerdo-7 .descripcion {
-      max-width: 300px;
-      margin-left: auto;
-      margin-right: 6%;
-      text-align: right;
-      transform: rotate(-3deg);
     }
 
 
     /* =========================
        RECUERDO 8
+       CENTRADO + INCLINADO
        ========================= */
 
     .recuerdo-8 {
@@ -366,28 +328,20 @@
       text-align: center;
     }
 
-    .recuerdo-8 .polaroid {
+    .recuerdo-8 .composicion {
       transform: rotate(3deg);
     }
 
     .foto-8 {
       width: 250px;
       max-width: 70vw;
-
       display: block;
-    }
-
-    .recuerdo-8 .descripcion {
-      max-width: 300px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      transform: rotate(3deg);
     }
 
 
     /* =========================
        RECUERDO 9
+       IZQUIERDA + INCLINADA
        ========================= */
 
     .recuerdo-9 {
@@ -395,7 +349,7 @@
       text-align: left;
     }
 
-    .recuerdo-9 .polaroid {
+    .recuerdo-9 .composicion {
       margin-left: 5%;
       transform: rotate(-4deg);
     }
@@ -403,19 +357,13 @@
     .foto-9 {
       width: 210px;
       max-width: 60vw;
-
       display: block;
-    }
-
-    .recuerdo-9 .descripcion {
-      margin-left: 7%;
-      text-align: left;
-      transform: rotate(-4deg);
     }
 
 
     /* =========================
        RECUERDO 10
+       CENTRADO
        ========================= */
 
     .recuerdo-10 {
@@ -423,23 +371,14 @@
       text-align: center;
     }
 
-    .recuerdo-10 .polaroid {
+    .recuerdo-10 .composicion {
       transform: rotate(1deg);
     }
 
     .foto-10 {
       width: 285px;
       max-width: 82vw;
-
       display: block;
-    }
-
-    .recuerdo-10 .descripcion {
-      max-width: 320px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      transform: rotate(1deg);
     }
 
 
@@ -465,6 +404,7 @@
 
       .descripcion {
         font-size: 12px;
+        max-width: 290px;
       }
 
     }
@@ -482,13 +422,21 @@
 
     .siguiente a {
       display: inline-block;
+
       color: #7d4657;
+
       text-decoration: none;
+
       font-family: "Cormorant Garamond", serif;
+
       font-size: 19px;
+
       font-style: italic;
+
       border-bottom: 1px solid rgba(125, 70, 87, 0.35);
+
       padding-bottom: 5px;
+
       transition: all 0.3s ease;
     }
 
@@ -502,6 +450,7 @@
 
 
 <body>
+
 
   <!-- =========================
        PORTADA
@@ -535,19 +484,23 @@
 
     <div class="recuerdo-1">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 10.55.07.jpeg"
-          alt="Una de nuestras primeras fotos"
-          class="foto-1"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 10.55.07.jpeg"
+            alt="Una de nuestras primeras fotos"
+            class="foto-1"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La que me acompaña en las buenas y en las malas por más de diez años 🤍
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La que me acompaña en las buenas y en las malas por más de diez años 🤍
-      </p>
 
     </div>
 
@@ -556,19 +509,23 @@
 
     <div class="recuerdo-2">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 11.18.46.jpeg"
-          alt="Bailando corridos"
-          class="foto-2"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 11.18.46.jpeg"
+            alt="Bailando corridos"
+            class="foto-2"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          Mi pareja favorita para bailar corridos entre los abuelitos 💃
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        Mi pareja favorita para bailar corridos entre los abuelitos 💃
-      </p>
 
     </div>
 
@@ -577,19 +534,23 @@
 
     <div class="recuerdo-3">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 12.50.06.jpeg"
-          alt="Cuando volvió de Alemania"
-          class="foto-3"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 12.50.06.jpeg"
+            alt="Cuando volvió de Alemania"
+            class="foto-3"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La persona por la que esperaría horas para volver a ver 🙈
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La persona por la que esperaría horas para volver a ver 🙈
-      </p>
 
     </div>
 
@@ -598,19 +559,23 @@
 
     <div class="recuerdo-4">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 12.50.15.jpeg"
-          alt="El día de la lluvia"
-          class="foto-4"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 12.50.15.jpeg"
+            alt="El día de la lluvia"
+            class="foto-4"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La que siempre está sin importar las circunstancias
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La que siempre está sin importar las circunstancias
-      </p>
 
     </div>
 
@@ -619,19 +584,23 @@
 
     <div class="recuerdo-5">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 12.55.35.jpeg"
-          alt="La foto de los zombies"
-          class="foto-5"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 12.55.35.jpeg"
+            alt="La foto de los zombies"
+            class="foto-5"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La amiga con la que parecemos zombie, pero... oiko 😂
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La amiga con la que parecemos zombie, pero... oiko 😂
-      </p>
 
     </div>
 
@@ -640,19 +609,23 @@
 
     <div class="recuerdo-6">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 12.58.57.jpeg"
-          alt="Cuando fue a apoyarme al fútbol"
-          class="foto-6"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 12.58.57.jpeg"
+            alt="Cuando fue a apoyarme al fútbol"
+            class="foto-6"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La que me acompañó en mi peor partido 🤣
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La que me acompañó en mi peor partido 🤣
-      </p>
 
     </div>
 
@@ -661,19 +634,23 @@
 
     <div class="recuerdo-7">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 1.01.30 PM.jpeg"
-          alt="Una selfie juntas"
-          class="foto-7"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 1.01.30 PM.jpeg"
+            alt="Una selfie juntas"
+            class="foto-7"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La persona con la que dormía ansiosa porque al otro día nos buscaría su chongo con el cacharro 😝
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La persona con la que dormía ansiosa porque al otro día nos buscaría su chongo con el cacharro 😝
-      </p>
 
     </div>
 
@@ -682,19 +659,23 @@
 
     <div class="recuerdo-8">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 1.03.19 PM.jpeg"
-          alt="Tomando tereré"
-          class="foto-8"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 1.03.19 PM.jpeg"
+            alt="Tomando tereré"
+            class="foto-8"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          Con la que podíamos sentarnos horas a tomar tereré y hablar de nuestros fracasos amorosos 🥲
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        Con la que podíamos sentarnos horas a tomar tereré y hablar de nuestros fracasos amorosos 🥲
-      </p>
 
     </div>
 
@@ -703,19 +684,23 @@
 
     <div class="recuerdo-9">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 1.04.15 PM.jpeg"
-          alt="Una noche juntas"
-          class="foto-9"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 1.04.15 PM.jpeg"
+            alt="Una noche juntas"
+            class="foto-9"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La que siempre me incluye en todo 👯‍♀️
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La que siempre me incluye en todo 👯‍♀️
-      </p>
 
     </div>
 
@@ -724,26 +709,30 @@
 
     <div class="recuerdo-10">
 
-      <div class="polaroid">
+      <div class="composicion">
 
-        <img
-          src="WhatsApp Image 2026-08-12 at 1.13.38 PM.jpeg"
-          alt="Cuando aprendía a manejar"
-          class="foto-10"
-        >
+        <div class="polaroid">
+
+          <img
+            src="WhatsApp Image 2026-08-12 at 1.13.38 PM.jpeg"
+            alt="Cuando aprendía a manejar"
+            class="foto-10"
+          >
+
+        </div>
+
+        <p class="descripcion">
+          La que me acompañó a aprender a manejar y chocar la casa de Ña Elena 🤣
+        </p>
 
       </div>
-
-      <p class="descripcion">
-        La que me acompañó a aprender a manejar y chocar la casa de Ña Elena 🤣
-      </p>
 
     </div>
 
 
     <div class="siguiente">
       <a href="tvd.html">
-        Hay algo más que quiero decirte… →
+        Por todo esto, hay algo que quiero decirte… →
       </a>
     </div>
 
