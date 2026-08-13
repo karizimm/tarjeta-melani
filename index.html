@@ -23,36 +23,36 @@
       scroll-behavior: smooth;
     }
 
-  body {
-  min-height: 100vh;
-  background-color: #f7f0ea;
-  color: #2b2527;
-  font-family: "Cormorant Garamond", serif;
-  overflow-x: hidden;
-}
+    body {
+      min-height: 100vh;
+      background-color: #f7f0ea;
+      color: #2b2527;
+      font-family: "Cormorant Garamond", serif;
+      overflow-x: hidden;
+    }
 
 
     /* =========================
        PORTADA
        ========================= */
 
-   .portada {
-  min-height: 100vh;
+    .portada {
+      min-height: 100vh;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-  text-align: center;
-  padding: 25px;
+      text-align: center;
+      padding: 25px;
 
-  background-color: #f7f0ea;
-  background-image: url("Melani.png");
-  background-size: 100% 102%;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
+      background-color: #f7f0ea;
+      background-image: url("Melani.png");
+      background-size: 100% 102%;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
 
     h1 {
       font-family: "Sacramento", cursive;
@@ -140,6 +140,22 @@
 
 
     /* =========================
+       MARCO BLANCO
+       ========================= */
+
+    .polaroid {
+      display: inline-block;
+
+      background: white;
+
+      padding: 9px 9px 25px;
+
+      box-shadow:
+        0 10px 25px rgba(60,40,45,.16);
+    }
+
+
+    /* =========================
        RECUERDO 1
        CENTRADO
        ========================= */
@@ -149,17 +165,15 @@
       text-align: center;
     }
 
+    .recuerdo-1 .polaroid {
+      transform: rotate(-2deg);
+    }
+
     .foto-1 {
-      width: 270px;
-      max-width: 80vw;
+      width: 290px;
+      max-width: 82vw;
 
       display: block;
-      margin: 0 auto;
-
-      border-radius: 3px;
-
-      box-shadow:
-        0 10px 25px rgba(80,50,60,.13);
     }
 
     .recuerdo-1 .descripcion {
@@ -178,18 +192,16 @@
       text-align: left;
     }
 
+    .recuerdo-2 .polaroid {
+      margin-left: 4%;
+      transform: rotate(-7deg);
+    }
+
     .foto-2 {
-      width: 205px;
-      max-width: 62vw;
+      width: 245px;
+      max-width: 72vw;
 
       display: block;
-
-      margin-left: 5%;
-
-      transform: rotate(-4deg);
-
-      box-shadow:
-        0 9px 22px rgba(80,50,60,.15);
     }
 
     .recuerdo-2 .descripcion {
@@ -200,31 +212,30 @@
 
     /* =========================
        RECUERDO 3
-       ALEMANIA
+       DERECHA + INCLINADA
        ========================= */
 
     .recuerdo-3 {
       margin-bottom: 120px;
-      text-align: left;
+      text-align: right;
+    }
+
+    .recuerdo-3 .polaroid {
+      margin-right: 4%;
+      transform: rotate(6deg);
     }
 
     .foto-3 {
-      width: 235px;
-      max-width: 70vw;
+      width: 275px;
+      max-width: 78vw;
 
       display: block;
-
-      margin-left: 5%;
-
-      transform: rotate(-2deg);
-
-      box-shadow:
-        0 10px 25px rgba(80,50,60,.14);
     }
 
     .recuerdo-3 .descripcion {
-      margin-left: 6%;
-      text-align: left;
+      margin-left: auto;
+      margin-right: 6%;
+      text-align: right;
     }
 
 
@@ -238,15 +249,9 @@
       text-align: right;
     }
 
-    .polaroid {
-      display: inline-block;
-
-      background: white;
-
-      padding: 9px 9px 25px;
-
-      box-shadow:
-        0 10px 25px rgba(60,40,45,.16);
+    .recuerdo-4 .polaroid {
+      margin-right: 4%;
+      transform: rotate(3deg);
     }
 
     .foto-4 {
@@ -254,12 +259,6 @@
       max-width: 68vw;
 
       display: block;
-    }
-
-    .recuerdo-4 .polaroid {
-      margin-right: 4%;
-
-      transform: rotate(3deg);
     }
 
     .recuerdo-4 .descripcion {
@@ -280,15 +279,15 @@
       text-align: center;
     }
 
+    .recuerdo-5 .polaroid {
+      transform: rotate(0deg);
+    }
+
     .foto-5 {
       width: 300px;
       max-width: 85vw;
 
       display: block;
-      margin: 0 auto;
-
-      box-shadow:
-        0 12px 30px rgba(70,40,50,.18);
     }
 
     .recuerdo-5 .descripcion {
@@ -300,7 +299,7 @@
 
     /* =========================
        RECUERDO 6
-       FÚTBOL
+       FÚTBOL — IZQUIERDA + INCLINADA
        ========================= */
 
     .recuerdo-6 {
@@ -308,20 +307,16 @@
       text-align: left;
     }
 
+    .recuerdo-6 .polaroid {
+      margin-left: 4%;
+      transform: rotate(-7deg);
+    }
+
     .foto-6 {
-      width: 200px;
-      max-width: 60vw;
+      width: 240px;
+      max-width: 70vw;
 
       display: block;
-
-      margin-left: 5%;
-
-      border: 8px solid white;
-
-      box-shadow:
-        0 8px 20px rgba(70,40,50,.15);
-
-      transform: rotate(2deg);
     }
 
     .recuerdo-6 .descripcion {
@@ -340,18 +335,16 @@
       text-align: right;
     }
 
+    .recuerdo-7 .polaroid {
+      margin-right: 5%;
+      transform: rotate(-3deg);
+    }
+
     .foto-7 {
       width: 205px;
       max-width: 62vw;
 
-      display: inline-block;
-
-      margin-right: 5%;
-
-      transform: rotate(-3deg);
-
-      box-shadow:
-        0 9px 22px rgba(80,50,60,.15);
+      display: block;
     }
 
     .recuerdo-7 .descripcion {
@@ -373,17 +366,15 @@
       text-align: center;
     }
 
+    .recuerdo-8 .polaroid {
+      transform: rotate(3deg);
+    }
+
     .foto-8 {
       width: 250px;
       max-width: 70vw;
 
       display: block;
-      margin: 0 auto;
-
-      transform: rotate(3deg);
-
-      box-shadow:
-        0 10px 24px rgba(70,40,50,.16);
     }
 
     .recuerdo-8 .descripcion {
@@ -404,7 +395,6 @@
 
     .recuerdo-9 .polaroid {
       margin-left: 5%;
-
       transform: rotate(-4deg);
     }
 
@@ -432,17 +422,15 @@
       text-align: center;
     }
 
+    .recuerdo-10 .polaroid {
+      transform: rotate(1deg);
+    }
+
     .foto-10 {
       width: 285px;
       max-width: 82vw;
 
       display: block;
-      margin: 0 auto;
-
-      box-shadow:
-        0 12px 30px rgba(70,40,50,.18);
-
-      transform: rotate(1deg);
     }
 
     .recuerdo-10 .descripcion {
@@ -478,41 +466,41 @@
       }
 
     }
-.siguiente {
-  text-align: center;
-  margin-top: 110px;
-  margin-bottom: 20px;
-}
 
-.siguiente a {
-  display: inline-block;
-  color: #7d4657;
-  text-decoration: none;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 19px;
-  font-style: italic;
-  border-bottom: 1px solid rgba(125, 70, 87, 0.35);
-  padding-bottom: 5px;
-  transition: all 0.3s ease;
-}
 
-.siguiente a:hover {
-  color: #2b2527;
-  border-bottom-color: #2b2527;
-}
-    body {
-  background-image: url("Melani.png");
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    /* =========================
+       SIGUIENTE
+       ========================= */
+
+    .siguiente {
+      text-align: center;
+      margin-top: 110px;
+      margin-bottom: 20px;
+    }
+
+    .siguiente a {
+      display: inline-block;
+      color: #7d4657;
+      text-decoration: none;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 19px;
+      font-style: italic;
+      border-bottom: 1px solid rgba(125, 70, 87, 0.35);
+      padding-bottom: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .siguiente a:hover {
+      color: #2b2527;
+      border-bottom-color: #2b2527;
+    }
+
   </style>
 </head>
 
 
 <body>
-  
+
   <!-- =========================
        PORTADA
        ========================= -->
@@ -520,8 +508,8 @@
   <section class="portada">
 
     <h1 class="titulo-sacramento">
-  Esto es para vos, Melani 💕
-</h1>
+      Esto es para vos, Melani 💕
+    </h1>
 
     <a href="#recuerdos" class="continuar">
       Empezar →
@@ -545,11 +533,15 @@
 
     <div class="recuerdo-1">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 10.55.07.jpeg"
-        alt="Una de nuestras primeras fotos"
-        class="foto-1"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 10.55.07.jpeg"
+          alt="Una de nuestras primeras fotos"
+          class="foto-1"
+        >
+
+      </div>
 
       <p class="descripcion">
         Y pensar que esta foto fue el comienzo de tantas historias juntas.
@@ -562,11 +554,15 @@
 
     <div class="recuerdo-2">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 11.18.46.jpeg"
-        alt="Bailando corridos"
-        class="foto-2"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 11.18.46.jpeg"
+          alt="Bailando corridos"
+          class="foto-2"
+        >
+
+      </div>
 
       <p class="descripcion">
         Bailar corridos con los abuelitos 💃
@@ -579,11 +575,15 @@
 
     <div class="recuerdo-3">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 12.50.06.jpeg"
-        alt="Cuando volvió de Alemania"
-        class="foto-3"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 12.50.06.jpeg"
+          alt="Cuando volvió de Alemania"
+          class="foto-3"
+        >
+
+      </div>
 
       <p class="descripcion">
         Ese día nunca llegaba el colectivo, pero todo valió la pena cuando por fin te vi.
@@ -617,11 +617,15 @@
 
     <div class="recuerdo-5">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 12.55.35.jpeg"
-        alt="La foto de los zombies"
-        class="foto-5"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 12.55.35.jpeg"
+          alt="La foto de los zombies"
+          class="foto-5"
+        >
+
+      </div>
 
       <p class="descripcion">
         La foto en que “parecemos zombies” pero... oiko 😂
@@ -634,11 +638,15 @@
 
     <div class="recuerdo-6">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 12.58.57.jpeg"
-        alt="Cuando fue a apoyarme al fútbol"
-        class="foto-6"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 12.58.57.jpeg"
+          alt="Cuando fue a apoyarme al fútbol"
+          class="foto-6"
+        >
+
+      </div>
 
       <p class="descripcion">
         El peor partido, pero que estés ahí lo hizo especial.
@@ -651,11 +659,15 @@
 
     <div class="recuerdo-7">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 1.01.30 PM.jpeg"
-        alt="Una selfie juntas"
-        class="foto-7"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 1.01.30 PM.jpeg"
+          alt="Una selfie juntas"
+          class="foto-7"
+        >
+
+      </div>
 
       <p class="descripcion">
         Esperábamos ansiosas que amanezca para que nos busquen con el cacharro 😂
@@ -668,11 +680,15 @@
 
     <div class="recuerdo-8">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 1.03.19 PM.jpeg"
-        alt="Tomando tereré"
-        class="foto-8"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 1.03.19 PM.jpeg"
+          alt="Tomando tereré"
+          class="foto-8"
+        >
+
+      </div>
 
       <p class="descripcion">
         De las veces que nos sentábamos a hablar de nuestros desastres amorosos.
@@ -706,22 +722,28 @@
 
     <div class="recuerdo-10">
 
-      <img
-        src="WhatsApp Image 2026-08-12 at 1.13.38 PM.jpeg"
-        alt="Cuando aprendía a manejar"
-        class="foto-10"
-      >
+      <div class="polaroid">
+
+        <img
+          src="WhatsApp Image 2026-08-12 at 1.13.38 PM.jpeg"
+          alt="Cuando aprendía a manejar"
+          class="foto-10"
+        >
+
+      </div>
 
       <p class="descripcion">
         Cuando aprendía a manejar y chocamos la casa de Ña Elena 😂
       </p>
 
     </div>
-<div class="siguiente">
-  <a href="tvd.html">
-    Hay algo más que quiero decirte… →
-  </a>
-</div>
+
+
+    <div class="siguiente">
+      <a href="tvd.html">
+        Hay algo más que quiero decirte… →
+      </a>
+    </div>
 
   </section>
 
