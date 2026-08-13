@@ -129,39 +129,29 @@
 
 
     /* =========================
-       SEPARADOR
+       IMAGEN TVD
        ========================= */
 
     .separador {
-      width: 45px;
+      width: 20vw;
 
-      height: 1px;
+      max-width: 100px;
 
-      background: #a96d7c;
+      min-width: 65px;
 
-      margin: 75px auto 50px;
+      height: auto;
 
-      position: relative;
+      margin: 55px auto 50px;
+
+      display: block;
     }
 
-    .separador::after {
-      content: "♥";
+    .separador img {
+      width: 100%;
 
-      position: absolute;
+      height: auto;
 
-      left: 50%;
-
-      top: 50%;
-
-      transform: translate(-50%, -52%);
-
-      background: #f9f2ee;
-
-      padding: 0 10px;
-
-      color: #a96d7c;
-
-      font-size: 13px;
+      display: block;
     }
 
 
@@ -330,7 +320,15 @@
       }
 
       .separador {
-        margin-top: 65px;
+        width: 20vw;
+
+        min-width: 65px;
+
+        max-width: 90px;
+
+        margin-top: 55px;
+
+        margin-bottom: 50px;
       }
 
       .dedicatoria {
@@ -362,11 +360,12 @@
       }
 
     }
+
     .manuscrita {
-  font-family: "Parisienne", cursive !important;
-  font-size: 38px !important;
-  line-height: 1.2 !important;
-}
+      font-family: "Parisienne", cursive !important;
+      font-size: 38px !important;
+      line-height: 1.2 !important;
+    }
 
   </style>
 </head>
@@ -405,9 +404,16 @@
     </p>
 
 
-    <!-- SEPARADOR -->
+    <!-- IMAGEN TVD -->
 
-    <div class="separador"></div>
+    <div class="separador">
+
+      <img
+        src="WhatsApp_Image_2026-08-13_at_14.12.45-removebg-preview.png"
+        alt=""
+      >
+
+    </div>
 
 
     <!-- CANCIÓN -->
@@ -491,6 +497,10 @@
 
     </section>
 
+  </main>
+
+</body>
+</html>
 
   </main>
 
